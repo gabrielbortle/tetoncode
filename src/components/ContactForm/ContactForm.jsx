@@ -24,9 +24,10 @@ const ContactForm = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
+  
     try {
-      const response = await axios.post('https://tetoncode.com/send', formData); // Use live endpoint
+      // Replace with your Netlify endpoint URL
+      const response = await axios.post('https://starlit-starship-3e0fb9.netlify.app/.netlify/functions/send', formData);
       setStatusMessage('Your message was sent successfully!');
       console.log('Email sent:', response.data);
     } catch (error) {
