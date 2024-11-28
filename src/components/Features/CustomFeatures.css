@@ -1,0 +1,76 @@
+.features {
+    padding: 60px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+  }
+  
+  .features h2 {
+    font-size: 3rem;
+    margin-bottom: 30px;
+    color: #1e2a47; /* Navy Blue */
+  }
+  
+  .features p {
+    font-size: 1.8rem;
+    color: #555;
+  }
+  
+  .feature-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .feature-item {
+    width: 30%;
+    padding: 20px;
+    margin: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  .feature-item h3 {
+    font-size: 2rem;
+    color: #ff6600; /* Orange */
+  }
+  
+  .feature-item p {
+    color: #777;
+  }
+  
+  .tech-info {
+    font-size: 1.1rem;
+    color: #333;
+    margin-top: 30px;
+  }
+  
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .custom-features h2 {
+    font-size: 2rem;
+  }
+
+  .feature-list {
+    flex-direction: column; /* Stack the feature items vertically */
+    align-items: center; /* Center the items */
+  }
+
+  .feature-item {
+    width: 80%; /* On mobile, set width to 80% */
+    margin: 10px 0; /* Add margin between the boxes */
+    padding: 15px;
+  }
+
+  .tech-info {
+    font-size: 1rem;
+  }
+}
+
+/* For very small screens (like mobile portrait) */
+@media (max-width: 480px) {
+  .feature-item {
+    width: 90%; /* Even smaller on tiny screens */
+  }
+}

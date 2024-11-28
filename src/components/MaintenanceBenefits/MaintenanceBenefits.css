@@ -1,0 +1,67 @@
+.maintenance-benefits {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: white;
+    color: #333;
+  }
+  
+  .maintenance-benefits h2 {
+    font-size: 3rem;
+    margin-bottom: 30px;
+  }
+  
+  .benefit-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+  }
+  
+  .benefit-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .benefit-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .benefit-icon {
+    font-size: 3rem;
+    color: #ff6600;
+    margin-bottom: 15px;
+  }
+  
+  .benefit-card h3 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .benefit-card p {
+    font-size: 1.4rem;
+    color: #555;
+  }
+  
+  
+  .cta-link:hover {
+    color: #333;
+  }
+  
+  @media (max-width: 768px) {
+    .benefit-cards {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .benefit-card {
+      width: 100%;
+      max-width: 300px;
+      margin: 10px 0;
+    }
+  }
+  

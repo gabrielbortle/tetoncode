@@ -1,0 +1,22 @@
+.why-us {
+  padding: 40px 20px;
+  text-align: center;
+  color: #fff;
+  background: linear-gradient(to top, #fd883b, rgba(255, 102, 0, 0.7));
+}
+
+.why-us h2 {
+  font-size: 3.5rem;
+  margin-bottom: 15px;
+}
+
+.why-us ul {
+  list-style: none;
+  padding: 0;
+}
+
+.why-us li {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}

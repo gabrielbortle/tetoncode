@@ -1,0 +1,82 @@
+/* Mission Section Styling */
+.mission-section {
+    background: linear-gradient(to bottom, #373a6d, #e1e5f2); /* Initial gradient */
+    transition: background 0.8s ease-in-out; /* Smooth gradient transition */
+    text-align: center;
+}
+
+.mission-container {
+    max-width: 80%; /* Max width for larger screens */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 20px;
+}
+
+.mission-content {
+    display: flex; /* Flexbox for the two-column layout */
+    justify-content: space-between; /* Space between image and text */
+    align-items: center; /* Vertically center the items */
+    flex-wrap: wrap; /* Allow content to wrap on smaller screens */
+}
+
+.mission-image {
+    flex: 0 1 40%; /* Fixed 40% width for the image */
+    max-width: 600px; /* Ensure image doesn’t get too large */
+    padding-right: 20px; /* Add some space between the image and text */
+    background: transparent;
+    margin-right: 10%;
+}
+
+.mission-image img {
+    width: 120%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+    background-color: none;
+}
+
+.mission-text {
+    flex: 1; /* Allow text to take up the remaining space */
+    text-align: left; /* Align text to the left */
+}
+
+/* Hover effect for title */
+.mission-title:hover {
+    color: #007BFF;
+}
+
+.mission-paragraph p {
+    font-size: 3rem;
+    color: #333; /* Dark color for readability */
+    padding-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .mission-title {
+        font-size: 1.75rem; /* Slightly smaller font size on smaller screens */
+    }
+
+    .mission-image {
+        flex: 0 1 80%; /* Allow the image to grow to 50% width on smaller screens */
+        padding-right: 0; /* Remove space between image and text */
+        margin-right: 0; /* Reset margin for mobile */
+    }
+
+    .mission-image img {
+        width: 120%; /* Make the image slightly larger on mobile */
+        object-fit: cover; /* Ensure the image maintains its aspect ratio */
+        object-position: left top; /* Align the image to the top left */
+    }
+
+    .mission-text {
+        text-align: center; /* Center the text on mobile */
+        margin-top: 20px; /* Add space above text */
+    }
+
+    .mission-section{
+        height: auto; /* Allow section to adjust to content height */
+    }
+
+    .mission-paragraph p {
+        font-size: 1.4rem;
+        color: #333; /* Dark color for readability */
+        padding-top: 10px;
+    }
+}

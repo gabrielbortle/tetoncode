@@ -1,0 +1,74 @@
+.technologies {
+  padding: 60px 20px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.technologies h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #1e2a47; /* Navy Blue */
+}
+
+.technologies p {
+  font-size: 1.8rem;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.tech-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px; /* Adds space between the tech items */
+}
+
+.tech-item {
+  width: 30%;
+  padding: 20px;
+  margin: 20px;
+  background-color: #f4f4f4;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.tech-item h3 {
+  font-size: 2rem;
+  color: #ff6600; /* Orange */
+  margin-top: 10px;
+}
+
+.tech-item p {
+  color: #777;
+  margin-top: 10px;
+}
+
+.tech-item svg {
+  color: #333; /* Dark color for the icons */
+}
+
+/* Media Queries for better responsiveness on mobile devices */
+@media (max-width: 768px) {
+  .tech-item {
+    width: 45%; /* Makes the boxes wider for medium screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .tech-item {
+    width: 90%; /* Makes the boxes almost full width on small screens */
+    margin: 10px 0; /* Reduces margin on small devices for better fit */
+  }
+
+  .technologies h2 {
+    font-size: 2rem; /* Slightly smaller font size on smaller screens */
+  }
+
+  .technologies p {
+    font-size: 1.4rem; /* Smaller text for better readability */
+  }
+}

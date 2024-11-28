@@ -1,0 +1,16 @@
+.custom-hero {
+    height: 50vh !important;
+  }
+
+@media (max-width: 768px) {
+    .custom-hero{
+      height: 60vh !important;
+    }
+  }
+
+@media (max-width: 600px) {
+  .custom-hero{
+    height: 75vh !important;
+  }
+}
+  

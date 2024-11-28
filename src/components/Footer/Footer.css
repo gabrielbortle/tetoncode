@@ -1,0 +1,97 @@
+/* Footer Styles */
+.footer {
+    background-color: #1c1c1c; /* Dark background color */
+    color: white; /* White text color */
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .footer-content {
+    width: 40%;
+    display: flex;
+    justify-content: space-between; /* Space between logo and links */
+    align-items: flex-start; /* Align items at the top */
+    gap: 40px; /* Space between the logo and the links */
+  }
+  
+  .footer-logo img {
+    height: 150px; /* Logo size */
+    width: auto;
+  }
+  
+  .footer-links {
+    display: flex;
+    gap: 40px;
+    justify-content: center; /* Center the links horizontally */
+    align-items: flex-start;
+  }
+  
+  .footer-column {
+    text-align: center;
+  }
+  
+  .footer-column h4 {
+    font-size: 2rem; /* Larger heading */
+    margin-bottom: 10px;
+    color: #ff6600; /* Orange color for headings */
+  }
+  
+  .footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-column ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-column ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.4rem; /* Font size for links */
+  }
+  
+  .footer-column ul li a:hover {
+    color: #ff6600; /* Hover effect color */
+  }
+  
+  .footer-note {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #ccc; /* Slightly lighter color for footer note */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .footer-content {
+      flex-direction: column; /* Stack logo and links vertically */
+      align-items: center; /* Center items horizontally */
+      text-align: center; /* Center text */
+    }
+  
+    .footer-logo img {
+      margin-bottom: 20px; /* Add space between logo and links on small screens */
+      height: 80px; /* Adjust logo size for smaller screens */
+    }
+  
+    .footer-links {
+      flex-direction: column; /* Stack the link columns vertically */
+      align-items: center; /* Center the links */
+      gap: 20px;
+    }
+  
+    .footer-column h4 {
+      font-size: 2rem; /* Slightly smaller heading for mobile */
+    }
+  
+    .footer-column ul li a {
+      font-size: 1.3rem; /* Adjust font size for mobile */
+    }
+  }
+  

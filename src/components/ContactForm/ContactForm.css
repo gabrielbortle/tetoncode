@@ -1,0 +1,100 @@
+/* Container */
+.contact-form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f9f9f9;
+  padding: 20px;
+}
+
+.contact-form-container h2 {
+  font-size: 2.5rem; /* Increased font size */
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Form */
+.contact-form {
+  background: #f4f4f4; /* Light gray background */
+  padding: 50px ;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 100%;
+  border: 2px solid #ddd; /* Added border */
+}
+
+/* Form Labels */
+.contact-form label {
+  font-size: 1.2rem; /* Increased font size */
+  font-weight: 600;
+  color: #555;
+  margin-bottom: 10px;
+  display: block;
+}
+
+/* Form Inputs & Textareas */
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1.1rem; /* Increased font size */
+}
+
+/* Focus styles for inputs & textareas */
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #0066cc;
+  outline: none;
+  box-shadow: 0 0 4px rgba(0, 102, 204, 0.5);
+}
+
+/* Submit Button - Centered */
+.submit-container {
+  display: flex;
+  justify-content: center;
+}
+
+.submit-button {
+  padding: 12px 30px;
+  background-color: #ff6600; /* Orange button */
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-size: 1.2rem; /* Increased font size */
+}
+
+.submit-button:hover {
+  background-color: black; /* Darker orange on hover */
+  transform: scale(1.05);
+}
+
+/* Status Message */
+.status-message {
+  margin-top: 20px;
+  font-size: 1.1rem; /* Slightly larger font */
+  color: #333;
+  text-align: center;
+}
+
+@media (max-width:768px) {
+  /* Form */
+.contact-form {
+  background: #f4f4f4; /* Light gray background */
+  padding: 30px ;
+  padding-right: 50px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 80%;
+  width: 100%;
+  border: 2px solid #ddd; /* Added border */
+}
+
+}

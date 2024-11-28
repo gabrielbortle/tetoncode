@@ -1,0 +1,66 @@
+.maintenance-needs {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  .maintenance-needs h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .maintenance-needs p {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    line-height: 1.6;
+    color: #555;
+    margin-right: 20%;
+    margin-left: 20%;
+
+  }
+  
+  .maintenance-needs strong {
+    font-weight: bold;
+    color: #ff6600; /* Highlight color for keywords */
+  }
+
+  
+/* Styling for the 'Get in Touch' Section */
+.get-in-touch {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f1f1f1; /* Light background for the section */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .get-in-touch p {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+   .btn-primary {
+    font-size: 1.4rem;
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #ff6600; /* Button color */
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .get-in-touch .btn-primary:hover {
+    background-color: #cc5200; /* Darker shade on hover */
+    transform: scale(1.05);
+  }
+  
+  @media (max-width: 768px) {
+    .maintenance-needs p {
+        margin-bottom: 15px;
+        margin: 0;
+      }
+  }

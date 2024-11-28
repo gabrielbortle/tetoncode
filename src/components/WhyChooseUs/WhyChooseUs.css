@@ -1,0 +1,75 @@
+.why-choose-us {
+    padding: 4rem 2rem;
+    text-align: center;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    margin-top: 2rem;
+  }
+  
+  .why-choose-us h2 {
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+  }
+  
+  .why-choose-us p {
+    font-size: 1.6rem;
+    color: #666;
+    margin-bottom: 2rem;
+  }
+  
+  .reasons {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping to the next line */
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  .reason-card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: calc(30% - 1rem); /* Each card will take 50% width minus gap */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .reason-card h3 {
+    font-size: 2rem;
+    color: #ff6600;
+    margin-bottom: 1rem;
+  }
+  
+  .reason-card p {
+    font-size: 1.5rem;
+    color: #666;
+  }
+  
+  .reason-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .reason-card {
+      width: 100%; /* Stack cards vertically on small screens */
+    }
+  
+    .why-choose-us h2 {
+      font-size: 2rem;
+    }
+  
+    .why-choose-us p {
+      font-size: 1.125rem;
+    }
+  
+    .reason-card h3 {
+      font-size: 1.6rem;
+    }
+  
+    .reason-card p {
+      font-size: 0.95rem;
+    }
+  }
+  

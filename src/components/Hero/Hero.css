@@ -1,0 +1,87 @@
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem 2rem;
+  background-color: #373a6d;
+  overflow: hidden; /* Prevent image from overflowing */
+}
+
+.hero-content {
+  flex: 1;
+  text-align: left;
+  padding-left: 5rem;
+}
+
+.hero-image {
+  flex: 1;
+  position: relative;
+  overflow: hidden; /* Prevent image from overflowing the container */
+}
+
+.hero-image img {
+  width: 120%; /* Increase the image size */
+  object-fit: cover; /* Ensure the image covers the container */
+  object-position: center center; /* Keep the image centered */
+  position: relative;
+  left: -10%; /* Shift the image slightly to the left to avoid overlap */
+}
+.hero-content h1 {
+  font-size: 4rem;
+  color: #ff6600; /* Change this to the color you prefer */
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+.hero-content h1:hover {
+  color: #ffffff; /* Slight color change on hover for added effect */
+}
+
+/* Add this to your Hero.css */
+
+.hero-content h1, .hero-content p {
+  opacity: 0; /* Start with elements hidden */
+  transform: translateX(-50px); /* Start from the left for sliding */
+  animation-duration: 1.5s; /* Animation duration */
+  animation-fill-mode: forwards; /* Keep the final state of animation */
+}
+
+.hero-content h1 {
+  animation-name: fadeInSlideLeft; /* Assign specific animation to h1 */
+}
+
+.hero-content p {
+  animation-name: fadeInSlideLeft; /* Assign same animation to p */
+  animation-delay: 0.5s; /* Delay the p element slightly for a staggered effect */
+}
+
+/* Keyframes for fading in and sliding from the left */
+@keyframes fadeInSlideLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px); /* Start from the left */
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0); /* End at its normal position */
+  }
+}
+
+
+@media (max-width: 768px) {
+  .hero-image img {
+    width: 140%; /* Make the image slightly bigger for mobile */
+    object-position: center top; /* Align the image to the top to avoid overlap */
+    left: -15%; /* Adjust the left position to prevent overlap */
+  }
+
+  .hero-content {
+    flex: 1;
+    text-align: left;
+    padding-left: 0rem; /* Adjust text padding for mobile */
+  }
+
+  .hero {
+    height: 65vh;
+  }
+}
