@@ -2,9 +2,9 @@ require('dotenv').config();
 const nodemailer = require('nodemailer');
 
 const transporter = nodemailer.createTransport({
-  host: 'smtp.hostinger.com',
-  port: 465,
-  secure: true,
+  host: 'smtp.hostinger.com',  // Ensure these settings are correct
+  port: 465,                   // Correct port for SSL
+  secure: true,                // Ensure SSL is enabled
   auth: {
     user: process.env.EMAIL_USER,
     pass: process.env.EMAIL_PASS,
@@ -12,15 +12,13 @@ const transporter = nodemailer.createTransport({
 });
 
 exports.handler = async (event) => {
-  // Allow cross-origin requests from your frontend domain
   const headers = {
-    "Access-Control-Allow-Origin": "https://tetoncode.com", // Replace with your actual domain
-    "Access-Control-Allow-Methods": "OPTIONS, POST", // Allow only POST and OPTIONS methods
-    "Access-Control-Allow-Headers": "Content-Type", // Allow the content type header
+    "Access-Control-Allow-Origin": "https://tetoncode.com", // Adjust if necessary
+    "Access-Control-Allow-Methods": "OPTIONS, POST",
+    "Access-Control-Allow-Headers": "Content-Type",
   };
 
   if (event.httpMethod === 'OPTIONS') {
-    // Respond to preflight request
     return {
       statusCode: 204,
       headers: headers,
