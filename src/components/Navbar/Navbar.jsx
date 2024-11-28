@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { NavLink, Link } from 'react-router-dom'; // Use NavLink instead of Link
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome, faUser, faEnvelope, faLaptopCode } from '@fortawesome/free-solid-svg-icons';
-import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 import TetonCodeLogo from './TetonCode.png';  // Importing the logo
 
 import './Navbar.css';
