@@ -1,2 +1,10 @@
 [build]
-  functions = "netlify/functions"
+  functions = "netlify/functions"   # Directory where Netlify functions are located
+  publish = "dist"                   # Output directory for your build files (e.g., Vite or React)
+
+[[plugins]]
+  package = "@netlify/plugin-functions-install-core"   # Ensures dependencies inside functions get installed
+
+[context.production.environment]
+  EMAIL_USER = "your-email@example.com"   # You can also add environment variables here if needed
+  EMAIL_PASS = "your-email-password"
