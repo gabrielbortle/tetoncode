@@ -145,6 +145,8 @@ body {
   z-index: 1001; /* Ensure the button is on top */
   transition: color 0.3s ease; /* Smooth color transition */
   margin: 0; /* Remove margin */
+  background-color: transparent; /* Ensure no background color */
+
 }
 
 /* Toggle Button Icon (3 lines) */
@@ -153,13 +155,36 @@ body {
   height: 5px; /* Height of each line */
   background-color: #f5a623; /* Color of the lines */
   margin: 6px 0; /* Space between the lines */
-  transition: background-color 0.3s ease; /* Smooth transition for color change */
   display: block; /* Ensure the span elements are block-level for stacking */
+}
+
+/* Toggle Button Lines - Default */
+.navbar-toggle-icon {
+  width: 35px;
+  height: 5px;
+  background-color: #f5a623;
+  margin: 6px 0;
+  transition: transform 0.3s ease, opacity 0.3s ease; /* Add smooth animations */
+}
+
+/* When the mobile menu is active */
+.navbar.active .navbar-toggle-icon:nth-child(1) {
+  transform: translateY(11px) rotate(45deg); /* Rotate the first line */
+}
+
+.navbar.active .navbar-toggle-icon:nth-child(2) {
+  opacity: 0; /* Hide the middle line */
+}
+
+.navbar.active .navbar-toggle-icon:nth-child(3) {
+  transform: translateY(-11px) rotate(-45deg); /* Rotate the last line */
 }
 
 /* Hover Effect on Toggle Button */
 .navbar-toggle:hover {
   color: #fff; /* Change the entire button's color on hover for contrast */
+  background-color: transparent; /* Ensure no background color */
+
 }
 
 /* Remove hover effect on individual lines */

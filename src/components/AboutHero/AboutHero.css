@@ -44,3 +44,13 @@
     background-color: #e64a19; /* Slightly darker hover color */
   }
   
+  @media (max-width: 768px) {
+    .about-hero h1{
+      font-size: 3rem;
+    }
+    .about-hero p {
+      font-size: 2rem;
+      margin-bottom: 30px;
+      color: white;
+    }
+  }

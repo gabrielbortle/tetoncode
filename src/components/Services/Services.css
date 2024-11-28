@@ -77,13 +77,13 @@
   
   }
   .service-box h3 {
-    font-size: 1.6em;
+    font-size: 2em;
     color: #373a6d;  /* Adjust to your brand color */
   }
   
   .service-box p {
-    font-size: 1.1em;
+    font-size: 1.5rem;
     color: #333;
-    line-height: 1.6;
+    line-height: 1.4;
   }
 }

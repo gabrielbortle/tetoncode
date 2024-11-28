@@ -3,6 +3,8 @@
   text-align: center;
   color: #fff;
   background: linear-gradient(to top, #fd883b, rgba(255, 102, 0, 0.7));
+  padding-left: 12%;
+  padding-right: 12%;
 }
 
 .why-us h2 {

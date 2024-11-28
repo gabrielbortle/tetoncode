@@ -55,6 +55,23 @@
   animation-delay: 0.5s; /* Delay the p element slightly for a staggered effect */
 }
 
+ 
+.hero-cta {
+  display: inline-block;
+  background-color: #ff5722; /* Call-to-action button color */
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.hero-cta:hover {
+  background-color: #e64a19; /* Slightly darker hover color */
+  text-decoration: none;
+}
+
 /* Keyframes for fading in and sliding from the left */
 @keyframes fadeInSlideLeft {
   0% {

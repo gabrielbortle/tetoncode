@@ -7,8 +7,7 @@ const AboutSection = () => {
     <section className="about-section">
       <h2>Who We Are</h2>
       <p>
-        Located in the heart of the valley, we specialize in crafting custom websites 
-        designed to empower local businesses. Our mission is to help you thrive online, 
+        Located in the heart Teton valley, our mission is to help you thrive online
         with unique and user-friendly web solutions tailored to your needs.
       </p>
 
