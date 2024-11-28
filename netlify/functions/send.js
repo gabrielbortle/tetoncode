@@ -1,5 +1,3 @@
-// netlify/functions/send.js
-
 require('dotenv').config();
 const nodemailer = require('nodemailer');
 
@@ -14,10 +12,26 @@ const transporter = nodemailer.createTransport({
 });
 
 exports.handler = async (event) => {
+  // Allow cross-origin requests from your frontend domain
+  const headers = {
+    "Access-Control-Allow-Origin": "https://tetoncode.com", // Replace with your actual domain
+    "Access-Control-Allow-Methods": "OPTIONS, POST", // Allow only POST and OPTIONS methods
+    "Access-Control-Allow-Headers": "Content-Type", // Allow the content type header
+  };
+
+  if (event.httpMethod === 'OPTIONS') {
+    // Respond to preflight request
+    return {
+      statusCode: 204,
+      headers: headers,
+    };
+  }
+
   if (event.httpMethod !== 'POST') {
     return {
       statusCode: 405,
       body: JSON.stringify({ message: 'Method Not Allowed' }),
+      headers: headers,
     };
   }
 
@@ -46,12 +60,14 @@ exports.handler = async (event) => {
     return {
       statusCode: 200,
       body: JSON.stringify({ message: 'Email sent successfully' }),
+      headers: headers,
     };
   } catch (error) {
     console.error('Error sending email:', error);
     return {
       statusCode: 500,
       body: JSON.stringify({ message: 'Error sending email', error }),
+      headers: headers,
     };
   }
 };
