@@ -40,6 +40,10 @@
   .project-card {
     text-align: center;
   }
+
+  .project-content p{
+    font-size: 1.5rem;
+  }
   
   .images {
     position: relative;

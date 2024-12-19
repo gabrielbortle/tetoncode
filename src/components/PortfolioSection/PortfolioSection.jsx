@@ -18,25 +18,27 @@ const PortfolioSection = () => {
   });
 
   const projects = [
-    {
-      title: 'Gabriels Photo',
-      desktopImage: photoDesktop,
-      mobileImage: photoMobile,
-      description: 'Custom React website showcasing photography portfolio.',
-      website: 'https://gabrielsphoto.com',
-    },
+
     {
       title: 'Alterations By Alma',
       desktopImage: almaDesktop,
       mobileImage: almaMobile,
-      description: 'E-commerce website with integrated WooCommerce for product sales.',
+      description: 'E-Commerce, Online Shop,  Web Design & Development, Web Hosting & Maintaining',
       website: 'https://alterationsbyalma.com',
     },
+    {
+      title: 'Gabriels Photo',
+      desktopImage: photoDesktop,
+      mobileImage: photoMobile,
+      description: 'Web Design & Development, Web hosting & maintaining',
+      website: 'https://gabrielsphoto.com',
+    },
+    
     {
       title: 'Skyline Painting',
       desktopImage: skylineDesktop,
       mobileImage: skylineMobile,
-      description: 'React website for a painting company, showcasing services and portfolio.',
+      description: 'Web Design & Development, Web hosting & Maintaining',
       website: 'https://skylinepainting27.com',
     },
   ];
