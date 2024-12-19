@@ -1,6 +1,7 @@
 import React from 'react';
 import './AboutSection.css'; // Import styles
 import GabeGiron from './GabeGiron.png'
+import GianRocha from './GianRocha.png'
 
 const AboutSection = () => {
   return (
@@ -19,7 +20,7 @@ const AboutSection = () => {
             <h4>Gabriel Giron <br></br>(lead developer)</h4>
           </div>
           <div className="team-member">
-            <img src={GabeGiron} alt="Co-worker" className="team-photo" />
+            <img src={GianRocha} alt="Co-worker" className="team-photo" />
             <h4>Gian Rocha <br /> (UI Designer)</h4>
           </div>
         </div>
