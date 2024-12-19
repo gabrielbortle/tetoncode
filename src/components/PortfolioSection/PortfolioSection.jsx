@@ -1,5 +1,5 @@
 import React from 'react';
-import './PortfolioSection.css'
+import './PortfolioSection.css';
 
 // Photography Screenshot 
 import photoDesktop from '../../assets/photoDesktop.jpg'
@@ -21,6 +21,7 @@ const PortfolioSection = () => {
       mobileImage: photoMobile,
       description: 'Custom React website showcasing photography portfolio with contact features.',
       link: '/projects/photography',
+      website: 'https://gabrielsphoto.com',
     },
     {
       title: 'Alterations Site',
@@ -28,6 +29,7 @@ const PortfolioSection = () => {
       mobileImage: almaMobile,
       description: 'E-commerce website with integrated WooCommerce for product sales.',
       link: '/projects/alterations',
+      website: 'https://alterationsbyalma.com',
     },
     {
       title: 'Painting Company Website',
@@ -35,29 +37,39 @@ const PortfolioSection = () => {
       mobileImage: skylineMobile,
       description: 'React website for a painting company, showcasing services and portfolio.',
       link: '/projects/painting',
+      website: 'https://skylinepainting27.com',
     },
   ];
 
+  const handleButtonClick = (website) => {
+    window.location.href = website;
+  };
+
   return (
     <section className="portfolio">
-  <h2>Our Work</h2>
-  <div className="portfolio-grid">
-    {projects.map((project, index) => (
-      <div className="project-card" key={index}>
-        <h3>{project.title}</h3>
-        <div
-          className="images"
-          style={{ backgroundImage: `url(${project.desktopImage})` }}
-        >
-          <img className="mobile-img" src={project.mobileImage} alt={`${project.title} Mobile`} />
-        </div>
-        <p>{project.description}</p>
-        <a href={project.link} className="view-details">View Details</a>
+      <h2>Our Work</h2>
+      <div className="portfolio-grid">
+        {projects.map((project, index) => (
+          <div className="project-card" key={index}>
+            <h3>{project.title}</h3>
+            <div
+              className="images"
+              style={{ backgroundImage: `url(${project.desktopImage})` }}
+            >
+              <img className="mobile-img" src={project.mobileImage} alt={`${project.title} Mobile`} />
+            </div>
+            <p>{project.description}</p>
+            {/* Updated to button */}
+            <button
+              className="view-details"
+              onClick={() => handleButtonClick(project.website)}
+            >
+              Visit Website
+            </button>
+          </div>
+        ))}
       </div>
-    ))}
-  </div>
-</section>
-
+    </section>
   );
 };
 
