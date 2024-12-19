@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet';  // Import React Helmet for SEO
 import Hero from '../components/Hero/Hero';  // Import Hero component from its folder
 import Mission from '../components/MissionStatement/Mission';  // Import MissionStatement component from its folder
 import Services from '../components/Services/Services';  // Import Services component from its folder
+import PortfolioSection from '../components/PortfolioSection/PortfolioSection';
 
 const Home = () => {
   return (
@@ -59,6 +60,8 @@ const Home = () => {
 
       {/* Services Section */}
       <Services />
+
+      <PortfolioSection />
     </div>
   );
 };
