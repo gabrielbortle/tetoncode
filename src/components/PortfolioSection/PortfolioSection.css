@@ -4,11 +4,14 @@
     width: 90%;
     margin-left: 5%;
     margin-right: 5%;
+    margin-bottom: 5%;
   }
   
   .portfolio h2 {
-    font-size: 2rem;
+    font-size: 4rem;
     margin-bottom: 40px;
+    color: #373a6d;  /* Adjust to your brand color */
+
   }
   
   .portfolio-grid {
@@ -78,6 +81,7 @@
 
         text-align: center;
         width: 90%;
+        margin-bottom: 8%;
       }
     .portfolio-grid {
       display: flex; /* Switch to Flexbox */
