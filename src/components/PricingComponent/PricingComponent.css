@@ -28,6 +28,12 @@
   margin: 0 auto; /* Centers the grid in the container */
 }
 
+.pricing-card .package-description {
+  font-size: 1.8rem;
+  color: #333; /* Sets a darker text color */
+
+}
+
 .pricing-container .pricing-card {
   background: #fff;
   border: 1px solid #ddd;
@@ -83,6 +89,29 @@
   background-color: #cc5200; /* Slightly darker shade for hover */
 }
 
+.add-ons {
+  text-align: center; /* Center the text */
+  margin-top: 1.5rem; /* Adds some space between the features and add-ons section */
+}
+
+.add-ons h4 {
+  font-size: 2rem; /* Increases font size for the heading */
+  color: #ff6600; /* Matches the button color to maintain consistency */
+  margin-bottom: 1rem; /* Adds space below the heading */
+}
+
+.add-ons ul {
+  list-style: none; /* Removes the default list style */
+  padding: 0; /* Removes padding around the list */
+}
+
+.add-ons li {
+  font-size: 1.4rem; /* Increases font size for the list items */
+  margin-bottom: 0.8rem; /* Adds space between list items */
+  color: #333; /* Sets a darker text color */
+}
+
+
 /* Responsive Design Adjustments */
 @media (max-width: 768px) {
   .pricing-container {
@@ -90,6 +119,10 @@
       min-height: 220vh; /* Ensures it takes full viewport height */
 
   }
+
+.pricing-card .package-description {
+  font-size: 1.5rem;
+}
   
   .pricing-container .package-title {
       font-size: 2.5rem;
