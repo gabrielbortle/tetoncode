@@ -1,0 +1,109 @@
+.pricing-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 200vh; /* Ensures it takes full viewport height */
+  padding: 2rem;
+  background-color: #f9f9f9;
+  height: 100%;
+}
+
+.pricing-container .pricing-heading {
+  font-size: 3rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.pricing-container .pricing-grid {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  width: 100%; /* Ensures grid takes full width of container */
+  padding: 0; /* Removes any padding that might affect alignment */
+  margin: 0 auto; /* Centers the grid in the container */
+}
+
+.pricing-container .pricing-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1.5rem;
+  width: 500px;
+  max-width: 90%; /* Ensures it resizes appropriately on smaller screens */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.pricing-container .pricing-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.pricing-container .package-title {
+  font-size: 2.5rem;
+  color: #ff6600; /* Updated title color */
+  margin-bottom: 1rem;
+}
+
+.pricing-container .package-price {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.pricing-container .package-features {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.pricing-container .package-features li {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.pricing-container .cta-button {
+  background-color: #ff6600; /* Updated button color */
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.pricing-container .cta-button:hover {
+  background-color: #cc5200; /* Slightly darker shade for hover */
+}
+
+/* Responsive Design Adjustments */
+@media (max-width: 768px) {
+  .pricing-container {
+      padding: 1rem;
+      min-height: 220vh; /* Ensures it takes full viewport height */
+
+  }
+  
+  .pricing-container .package-title {
+      font-size: 2.5rem;
+    }
+
+  .pricing-container .pricing-grid {
+    gap: 2rem; /* Reduces gap between cards */
+  }
+  .pricing-container .package-features li {
+      font-size: 1.4rem;
+      margin-bottom: 0.5rem;
+    }
+  .pricing-container .pricing-card {
+    width: 80%; /* Ensures cards take 90% of the screen width */
+    margin: 0 auto; /* Centers the card horizontally */
+  }
+}

@@ -4,6 +4,7 @@ import CustomFeatures from '../components/Features/CustomFeatures';
 import Technologies from '../components/Technologies/Technologies';
 import { faCode } from '@fortawesome/free-solid-svg-icons'; // Import the icon
 import { Helmet } from 'react-helmet';  // Import React Helmet for SEO
+import PricingComponent from '../components/PricingComponent/PricingComponent';
 
 const CustomWeb = () => {
   return (
@@ -73,6 +74,8 @@ const CustomWeb = () => {
 
       <CustomFeatures />
       <Technologies />
+
+      <PricingComponent />
     </div>
   );
 };
